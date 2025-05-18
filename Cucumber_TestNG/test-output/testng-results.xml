@@ -1,101 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-17T06:32:40 CDT" name="Suite" finished-at="2025-05-17T06:33:17 CDT" duration-ms="37126">
+  <suite started-at="2025-05-17T19:39:39 CDT" name="Default suite" finished-at="2025-05-17T19:39:50 CDT" duration-ms="10661">
     <groups>
-      <group name="E2E">
-        <method signature="EndToEndTests.submitOrder(java.util.HashMap)[pri:0, instance:Tests.EndToEndTests@76b07f29]" name="submitOrder" class="Tests.EndToEndTests"/>
-      </group> <!-- E2E -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGRunner@2de23121]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-17T06:32:40 CDT" name="LoginTest" finished-at="2025-05-17T06:33:07 CDT" duration-ms="27382">
-      <class name="Tests.LoginTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:32:40 CDT" name="launchApplication" finished-at="2025-05-17T06:32:45 CDT" duration-ms="5419" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="invalidLogin()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:32:45 CDT" name="invalidLogin" finished-at="2025-05-17T06:32:46 CDT" duration-ms="850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:32:46 CDT" name="tearDown" finished-at="2025-05-17T06:32:46 CDT" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:32:46 CDT" name="launchApplication" finished-at="2025-05-17T06:33:06 CDT" duration-ms="19472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="validLogin()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:33:06 CDT" name="validLogin" finished-at="2025-05-17T06:33:07 CDT" duration-ms="1285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginTest@352ff4da]" started-at="2025-05-17T06:33:07 CDT" name="tearDown" finished-at="2025-05-17T06:33:07 CDT" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.LoginTest -->
-    </test> <!-- LoginTest -->
-    <test started-at="2025-05-17T06:32:40 CDT" name="E2ETests" finished-at="2025-05-17T06:33:17 CDT" duration-ms="37126">
-      <class name="Tests.EndToEndTests">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:32:40 CDT" name="launchApplication" finished-at="2025-05-17T06:32:48 CDT" duration-ms="8026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:32:48 CDT" name="submitOrder" data-provider="getData" finished-at="2025-05-17T06:32:54 CDT" duration-ms="5925" status="PASS">
+    <test started-at="2025-05-17T19:39:39 CDT" name="Default test" finished-at="2025-05-17T19:39:50 CDT" duration-ms="10661">
+      <class name="Cucumber.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGRunner@2de23121]" started-at="2025-05-17T19:39:39 CDT" name="setUpClass" finished-at="2025-05-17T19:39:40 CDT" duration-ms="325" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=123456789Hello_World, email=hello_world@abc.com, productName=ZARA COAT 3}]]>
+                <![CDATA[org.testng.TestRunner@7c847072]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:32:54 CDT" name="tearDown" finished-at="2025-05-17T06:32:54 CDT" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:32:54 CDT" name="launchApplication" finished-at="2025-05-17T06:32:59 CDT" duration-ms="5379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:32:59 CDT" name="submitOrder" data-provider="getData" finished-at="2025-05-17T06:33:05 CDT" duration-ms="5553" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGRunner@2de23121]" started-at="2025-05-17T19:39:40 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-17T19:39:45 CDT" duration-ms="5466" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=1234Hello, email=hello_world!@abc.com, productName=ADIDAS ORIGINAL}]]>
+                <![CDATA["Invalid Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:33:05 CDT" name="tearDown" finished-at="2025-05-17T06:33:07 CDT" duration-ms="1685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:33:07 CDT" name="launchApplication" finished-at="2025-05-17T06:33:11 CDT" duration-ms="4594" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:33:11 CDT" name="submitOrder" data-provider="getData" finished-at="2025-05-17T06:33:17 CDT" duration-ms="5476" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGRunner@2de23121]" started-at="2025-05-17T19:39:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-17T19:39:50 CDT" duration-ms="4830" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=1234Hello, email=hello_world!@abc.com, productName=IPHONE 13 PRO}]]>
+                <![CDATA["Invalid Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.EndToEndTests@76b07f29]" started-at="2025-05-17T06:33:17 CDT" name="tearDown" finished-at="2025-05-17T06:33:17 CDT" duration-ms="132" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGRunner@2de23121]" started-at="2025-05-17T19:39:50 CDT" name="tearDownClass" finished-at="2025-05-17T19:39:50 CDT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.EndToEndTests -->
-    </test> <!-- E2ETests -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

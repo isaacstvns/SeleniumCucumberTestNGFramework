@@ -1,21 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>AutomationTest</groupId>
 	<artifactId>Cucumber_TestNG</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>Cucumber_TestNG</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
 	</properties>
-
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -102,21 +96,33 @@
 				</pluginManagement>
 			</build>
 		</profile>
+		<profile>
+			<id>CucumberTest</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.3</version>
+						<configuration>
+							<includes>
+								<include>**/TestNGRunner.java</include>
+							</includes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
-
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven
+		<pluginManagement>
+			<!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.5.3</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
 				</plugin>
 				<!-- clean lifecycle, see
 				https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->

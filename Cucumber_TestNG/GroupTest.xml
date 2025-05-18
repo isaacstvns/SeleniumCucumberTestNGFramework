@@ -6,7 +6,7 @@
 		<listener class-name="Utils.Listeners"/>
 	</listeners>
 	
-	<test thread-count="2" name="E2ETests">
+	<test thread-count="1" name="E2ETests">
 		<groups>
 			<run>
 				<include name="E2E"/>
@@ -17,7 +17,7 @@
 		</classes>
 	</test>
 	
-	<test thread-count="2" name="LoginTest">
+	<test thread-count="1" name="LoginTest">
 		<classes>
 			<class name="Tests.LoginTest"/>
 		</classes>
